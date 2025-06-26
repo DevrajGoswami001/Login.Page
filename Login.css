@@ -1,0 +1,257 @@
+.login-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 100vh;
+  background: #1e3a5c url('https://www.transparenttextures.com/patterns/squares.png');
+  background-size: cover;
+}
+
+.login-card {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  overflow: hidden;
+  min-width: 800px;
+  min-height: 480px;
+}
+
+.login-logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  width: 260px;
+  height: 480px;
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+
+.logo-placeholder {
+  font-size: 2.5rem;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  background: #f5f7fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  height: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.logo-your {
+  color: #888;
+}
+
+.logo-logo {
+  color: #222;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.login-form-section {
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  height: auto;
+  justify-content: flex-start;
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+
+.account-type-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.account-type-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.account-option {
+  background-color: #e0f0ff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.account-option.selected {
+  border: 2px solid #4caf50;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.checkmark {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.9rem;
+  color: green;
+  font-weight: bold;
+}
+
+.account-option p {
+  font-size: 1rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f7fa;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  cursor: default;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.toggle-password:hover {
+  color: #555;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.remember-me {
+  font-size: 0.98rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.login-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.login-btn {
+  width: 100px;
+  padding: 0.8rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+.success-captcha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  color: green;
+}
+
+.success-msg {
+  font-weight: bold;
+}
+
+.captcha-placeholder {
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+}
+
+.captcha-privacy {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.input-group.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .login-main-container {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .login-card {
+    flex-direction: column;
+    min-width: unset;
+    min-height: unset;
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .login-logo-section,
+  .login-form-section {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .login-form-section {
+    border-radius: 0 0 12px 12px;
+  }
+}
